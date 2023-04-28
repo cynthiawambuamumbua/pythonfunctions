@@ -22,6 +22,21 @@ def student_attributes(**kwargs):
     for key,value in kwargs.items():
         print(f"{key}:{value}")
 
+def my_function(*args,**kwargs):
+    print(f"hello world,args,kwargs")
+
+
+def myFun(*args):
+    for arg in args.list():
+        print(arg)
+
+
+def person(*data):
+    print(data)
+
+def my_function(*kids):
+    print(f"The youngest child is"+kids[2])
+
 #A function named concatenate_args that takes any number of string arguments 
 #inpositional arguments format and concatenates them into a single string
 def concatenate_args(*names):
@@ -37,3 +52,14 @@ def concatenate_kwargs(**kwargs):
     for key,value in kwargs.items():
         result += value
     return result
+
+def greet(name):
+    print("Hello",name)
+    print("How do you do?")
+greet("jack")
+
+
+def add(num1,num2):
+    result=num1+ num2
+    print("The sum is",result)
+add(12,45)
